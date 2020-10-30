@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+* {
+	box-sizing: border-box;
+}
+.box{
+	float: left;
+	width: 50%;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+</style>
 <title>F1</title>
 </head>
-<body>
+<body style="background-color:#66ff61">
 
-	<h1>Vormel 1</h1>
-	<p>Vormel 1 on üheistmeliste võidusõiduautode võistlusklass, milles peetakse maailmameistrivõistlusi. See lehekülg annab kerge ülevaate spordialast.</p>
+	<h1 style="color:#245ac7; font-family: Arial; font-size:100px;">Vormel 1</h1>
+<div class="clearfix">
+	<div class="box">
+	<p style="color:#00732a; font-family: Broadway; font-size:20px; text-align: center;">Vormel 1 on üheistmeliste võidusõiduautode võistlusklass, milles peetakse maailmameistrivõistlusi. See lehekülg annab kerge ülevaate spordialast.</p>
 	<a href="https://www.formula1.com/" target="_blank">https://www.formula1.com/</a>
 	<br />
-	<img
+	<img 
 		src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/2020_Formula_One_tests_Barcelona%2C_Alfa_Romeo_C39%2C_R%C3%A4ikk%C3%B6nen.jpg/1920px-2020_Formula_One_tests_Barcelona%2C_Alfa_Romeo_C39%2C_R%C3%A4ikk%C3%B6nen.jpg"
-		alt="F1"
+		alt="F1" style="border:20px solid black; height:200px; width: 500px" 
 	/>
 
-	<h2>2019. aasta tiimid ja sõitjad F1-s: </h2>
+	<h2 style="color:#1d7eab; font-size: 40px;">2019. aasta tiimid ja sõitjad F1-s: </h2>
 	<ul>
 		<li>Mercedes</li>
 			<ul>
@@ -69,5 +85,6 @@
 	</ul>
 
 	<p>Liigu edasi uuele lehele, klõpsates <a href="./uus_leht.html">siia</a>.</p>
+</div>
 </body>
 </html>
